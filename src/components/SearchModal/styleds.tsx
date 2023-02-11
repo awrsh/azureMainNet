@@ -43,7 +43,7 @@ export const SearchInput = styled.input`
   align-items: center;
   width: 100%;
   white-space: nowrap;
-  background: none;
+  background-color: transparent !important;
   border: none;
   outline: none;
   border-radius: 20px;

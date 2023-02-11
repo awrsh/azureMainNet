@@ -13,6 +13,12 @@ const Row = styled(Box)<{ align?: string; padding?: string; border?: string; bor
 
 export const RowBetween = styled(Row)`
   justify-content: space-between;
+  &.header-row{
+    padding-top: 110px;
+  }
+  @media (min-width: 1023px){
+    &.header-row{ padding-top: 14px;}
+  }
 `
 
 export const RowFlat = styled.div`

@@ -452,10 +452,11 @@ export default function Swap() {
             {betterTradeLinkVersion && <BetterTradeLink version={betterTradeLinkVersion} />}
           </BottomGrouping>
         </Wrapper>
+          {trade && <AdvancedSwapDetailsDropdown trade={trade} /> || ""}
 
       </AppBody>
 
-      <AdvancedSwapDetailsDropdown trade={trade} />
+      
     </>
   )
 }

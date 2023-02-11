@@ -29,22 +29,14 @@ export const MainWrapper = styled.div`
   }
   .swap_box_wrapper{    
     flex-wrap: nowrap;
-    gap: 0 24px;
+    gap: 0 12px;
   }
-  @media (min-width: 993px) and (max-width: 1440px){
-    .swap_box_wrapper{    
-      flex-wrap: wrap;
-      gap: 0 24px;
-    }
-  }
-  @media (min-width: 768px) and (max-width: 993px) {
-    .swap_wrapper{
-      padding-right: 16px;
-    }
-  }
-  @media (max-width: 992px) {
+  
+
+  @media (max-width: 1023px) {
     .swap_box_wrapper{
       gap: 24px ;
+      padding: 16px;
     }
     
     .currency-table .os-content-arrange{
@@ -62,14 +54,15 @@ export const BodyWrapper = styled.div`
     0px 16px 24px rgba(0, 0, 0, 0.04), 0px 24px 32px rgba(0, 0, 0, 0.01);
   padding: 1rem;
 
-  @media (min-width: 993px) and (max-width: 1440px){
-    flex-grow: 1;
-    order: 1;
+  @media (max-width: 1441px) and (min-width: 1023px) {
+    width: 28%;
+    max-width: 400px;
+    min-width: 350px;
   }
   @media (min-width: 1441px) {
     min-width: 465px;
   }
-  @media (max-width: 992px) {
+  @media (max-width: 1023px) {
     width: 100%;
   }
 `;
@@ -115,7 +108,7 @@ export default function AppBody({ children }: { children: React.ReactNode }) {
         res[o._time] = item;
       },
       complete() {
-        alert();
+        // alert();
       },
       error(error: Error) {
         console.log('query failed- ', error);

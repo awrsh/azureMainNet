@@ -39,11 +39,7 @@ const HeaderFrame = styled.div`
   .mobile-nav{
     display: none;
   }
-  ${({ theme }) => theme.mediaWidth.upToLarge`
-     .mobile-nav{
-       display: flex;
-    }
-  `};
+  
 `
 
 export const HeaderElement = styled.div`
@@ -308,10 +304,10 @@ export default function Header() {
   }, [])
   return (
     <HeaderFrame >
-      {isMobile || isTablet ? (
+      {(isMobile || isTablet  && false)? (
         <>
           {/* <span style={{ height: '50px', display: 'block' }}></span> */}
-          <div className="mobile-nav lg:hidden ">
+          <div className="mobile-nav hidden ">
             <HeaderElement >
               <div id="network_switcher" >
                 {coin.length > 0 ? (
@@ -356,10 +352,10 @@ export default function Header() {
 
       <RowBetween
         style={
-           { alignItems: 'center', width: '100%', justifyContent: 'space-between' }
+           { alignItems: 'center', width: '100%', justifyContent: 'space-between',  }
         }
+        className="header-row"
         padding={isMobile ? '1rem 1rem 0 0px' : '1rem'}
-        className='pt-[64px] lg:pt-[32px]'
       >
         {(!isMobile && !isTablet) || true ? (
           <HeaderElement  >

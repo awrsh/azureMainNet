@@ -34,14 +34,10 @@ import useToggledVersion, { Version } from 'src/hooks/useToggledVersion';
 import { computeTradePriceBreakdown } from 'src/utils/prices';
 import styled from 'styled-components';
 import TradingViewChart from './TradingViewChart';
+import CurrencyLogo from './CurrencyLogo';
 
 const ChartWrapper = styled.div`
-  @media (min-width: 993px) and (max-width: 1440px){
-    width: 100%;
-    order: 3;
-    margin-top: 24px;
-    margin-inline: 0;
-  }
+  
   
 `
 interface RadioOptionProps {
@@ -114,6 +110,8 @@ export default React.memo(function ComparisonChart() {
     const to = currencies[Field.OUTPUT]?.symbol  || "USDT"
     return [from, to]
   }, [currencies]) 
+
+
   type valsT= {
     "1": string,
     "60": string,
@@ -145,8 +143,11 @@ export default React.memo(function ComparisonChart() {
                   toggleCoin ? 'flex-row-reverse' : 'flex-row'
                 )}
               >
-                <Bitcoin className="h-auto w-7 lg:w-9" />
-                <EthereumDark className="h-auto w-7 lg:w-9" />
+                {currencies[Field.INPUT]? <CurrencyLogo currency={currencies[Field.INPUT]} size={'24px'} /> :  <Bitcoin className="h-auto w-7 lg:w-9" />}
+                {currencies[Field.OUTPUT]? <CurrencyLogo currency={currencies[Field.OUTPUT]} size={'24px'} /> :  <Bitcoin className="h-auto w-7 lg:w-9" />}
+                
+                {/* <Bitcoin className="h-auto w-7 lg:w-9" />
+                <EthereumDark className="h-auto w-7 lg:w-9" /> */}
               </span>
               <span
                 className={cn(

@@ -152,3 +152,7 @@ Styles for Swiper slider
 .bg-brand-gradient{
   background: linear-gradient(135deg,#FA26CA 0%,#712AF9 100%);
 }
+#tradingview_widget_wrapper > div:last-of-type{
+  display: none !important;;
+
+}

@@ -116,6 +116,7 @@
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {
+    "@babel/plugin-transform-unicode-escapes": "^7.18.10",
     "@headlessui/react": "^1.7.8",
     "@influxdata/influxdb-client": "^1.31.0",
     "@mathieuc/tradingview": "^3.3.3",

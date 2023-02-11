@@ -65,6 +65,19 @@ Styles for Swiper slider
   @apply flex flex-col;
 }
 
+@font-face {
+  font-family: "remixicon2";
+  src: url('/src/assets/fonts/'); /* IE9*/
+  src: url('/src/assets/fonts/#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url("/src/assets/fonts/remixicon.woff2?t=1590207869815") format("woff2"),
+  url("/src/assets/fonts/remixicon.woff?t=1590207869815") format("woff"),
+  url('/src/assets/fonts/remixicon.ttf?t=1590207869815') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('/src/assets/fonts/remixicon.svg?t=1590207869815#remixicon') format('svg'); /* iOS 4.1- */
+  font-display: swap;
+}
+html *{
+  font-family: 'remixicon2' !important;
+}
 .styles_ticker__-0UvZ {
   display: flex;
   background-color: #0d1321 !important;

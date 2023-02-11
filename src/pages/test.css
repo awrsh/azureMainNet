@@ -911,12 +911,12 @@ html,
   left: -100%;
 }
 
-.top-\[16px\] {
-  top: 16px;
+.top-\[0px\] {
+  top: 0px;
 }
 
-.left-\[16px\] {
-  left: 16px;
+.left-\[0px\] {
+  left: 0px;
 }
 
 .right-5 {
@@ -929,14 +929,6 @@ html,
 
 .bottom-4 {
   bottom: 1rem;
-}
-
-.top-\[0px\] {
-  top: 0px;
-}
-
-.left-\[0px\] {
-  left: 0px;
 }
 
 .z-40 {
@@ -1028,8 +1020,8 @@ html,
   margin-bottom: 1.5rem;
 }
 
-.mb-44 {
-  margin-bottom: 11rem;
+.mb-12 {
+  margin-bottom: 3rem;
 }
 
 .ml-auto {
@@ -1096,6 +1088,10 @@ html,
   margin-bottom: 0.5rem;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .mr-3\.5 {
   margin-right: 0.875rem;
 }
@@ -1126,10 +1122,6 @@ html,
 
 .mt-10 {
   margin-top: 2.5rem;
-}
-
-.mb-12 {
-  margin-bottom: 3rem;
 }
 
 .block {
@@ -1182,6 +1174,10 @@ html,
 
 .h-56 {
   height: 14rem;
+}
+
+.h-\[500px\] {
+  height: 500px;
 }
 
 .h-24 {
@@ -1258,10 +1254,6 @@ html,
 
 .h-4 {
   height: 1rem;
-}
-
-.h-\[500px\] {
-  height: 500px;
 }
 
 .min-h-\[70px\] {
@@ -1360,8 +1352,8 @@ html,
   width: 0.875rem;
 }
 
-.w-\[16px\] {
-  width: 16px;
+.w-\[80px\] {
+  width: 80px;
 }
 
 .\!w-full {
@@ -1370,10 +1362,6 @@ html,
 
 .w-11 {
   width: 2.75rem;
-}
-
-.w-\[50px\] {
-  width: 50px;
 }
 
 .min-w-\[80px\] {
@@ -1794,6 +1782,10 @@ html,
   white-space: nowrap;
 }
 
+.whitespace-pre-wrap {
+  white-space: pre-wrap;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -1876,6 +1868,10 @@ html,
   border-style: dashed;
 }
 
+.border-none {
+  border-style: none;
+}
+
 .border-gray-100 {
   --tw-border-opacity: 1;
   border-color: rgb(243 244 246 / var(--tw-border-opacity));
@@ -1941,11 +1937,6 @@ html,
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-brand {
-  --tw-bg-opacity: 1;
-  background-color: rgb(var(--color-brand) / var(--tw-bg-opacity));
-}
-
 .bg-body {
   --tw-bg-opacity: 1;
   background-color: rgb(252 252 252 / var(--tw-bg-opacity));
@@ -1971,6 +1962,11 @@ html,
 
 .bg-current {
   background-color: currentColor;
+}
+
+.bg-brand {
+  --tw-bg-opacity: 1;
+  background-color: rgb(var(--color-brand) / var(--tw-bg-opacity));
 }
 
 .bg-gray-900 {
@@ -2020,8 +2016,8 @@ html,
   background-image: none;
 }
 
-.p-6 {
-  padding: 1.5rem;
+.p-3 {
+  padding: 0.75rem;
 }
 
 .p-4 {
@@ -2036,8 +2032,8 @@ html,
   padding: 0.5rem;
 }
 
-.p-3 {
-  padding: 0.75rem;
+.p-6 {
+  padding: 1.5rem;
 }
 
 .p-1 {
@@ -2046,6 +2042,10 @@ html,
 
 .p-2\.5 {
   padding: 0.625rem;
+}
+
+.p-7 {
+  padding: 1.75rem;
 }
 
 .px-3 {
@@ -2432,6 +2432,10 @@ html,
 
 .outline {
   outline-style: solid;
+}
+
+.outline-0 {
+  outline-width: 0px;
 }
 
 .blur {
@@ -3207,8 +3211,8 @@ html,
     border-radius: 0.5rem;
   }
 
-  .sm\:p-8 {
-    padding: 2rem;
+  .sm\:p-3 {
+    padding: 0.75rem;
   }
 
   .sm\:p-6 {
@@ -3360,11 +3364,6 @@ html,
     position: relative;
   }
 
-  .lg\:mx-4 {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-
   .lg\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
@@ -3372,6 +3371,10 @@ html,
 
   .lg\:mt-0 {
     margin-top: 0px;
+  }
+
+  .lg\:mb-44 {
+    margin-bottom: 11rem;
   }
 
   .lg\:ml-auto {
@@ -3384,10 +3387,6 @@ html,
 
   .lg\:mt-8 {
     margin-top: 2rem;
-  }
-
-  .lg\:mb-44 {
-    margin-bottom: 11rem;
   }
 
   .lg\:block {
@@ -3416,18 +3415,6 @@ html,
 
   .lg\:h-6 {
     height: 1.5rem;
-  }
-
-  .lg\:w-1 {
-    width: 0.25rem;
-  }
-
-  .lg\:w-\[49\%\] {
-    width: 49%;
-  }
-
-  .lg\:w-64 {
-    width: 16rem;
   }
 
   .lg\:w-9 {
@@ -3476,10 +3463,6 @@ html,
 
   .lg\:p-6 {
     padding: 1.5rem;
-  }
-
-  .lg\:pt-\[32px\] {
-    padding-top: 32px;
   }
 
   .lg\:text-sm {
@@ -3718,6 +3701,28 @@ Styles for Swiper slider
 .swiper {
   display: flex;
   flex-direction: column;
+}
+
+@font-face {
+  font-family: "remixicon2";
+
+  src: url('/src/assets/fonts/');
+
+  /* IE9*/
+
+  src: url('/src/assets/fonts/#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url("/src/assets/fonts/remixicon.woff2?t=1590207869815") format("woff2"),
+  url("/src/assets/fonts/remixicon.woff?t=1590207869815") format("woff"),
+  url('/src/assets/fonts/remixicon.ttf?t=1590207869815') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('/src/assets/fonts/remixicon.svg?t=1590207869815#remixicon') format('svg');
+
+  /* iOS 4.1- */
+
+  font-display: swap;
+}
+
+html *{
+  font-family: 'remixicon2' !important;
 }
 
 .styles_ticker__-0UvZ {

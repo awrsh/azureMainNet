@@ -39,6 +39,9 @@ const Base = styled(RebassButton)<{
 `
 
 export const ButtonPrimary = styled(Base)`
+  &.seventy{
+    width: 70%;
+  }
   background: ${({ theme }) => theme.primary4gradient};
   color: white;
   &:focus {
@@ -64,6 +67,8 @@ export const ButtonPrimary = styled(Base)`
 `
 
 export const ButtonLight = styled(Base)`
+  width: 70%;
+  margin-inline: auto;
   background: ${({ theme }) => theme.primary4gradient};
   color: ${({ theme }) => theme.primaryText1};
   font-size: 16px;

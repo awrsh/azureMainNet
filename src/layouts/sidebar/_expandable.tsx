@@ -21,6 +21,9 @@ export default function Sidebar({ className }: { className?: string }) {
   const breakpoint = useBreakpoint()
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLElement>(null);
+  const closeSideBar = () => {
+    setOpen(false)
+  }
   useClickAway(ref, () => {
     setOpen(false);
   });
@@ -53,7 +56,7 @@ export default function Sidebar({ className }: { className?: string }) {
         ) : (
           <Logo />
         )}
-        {!open && <div className='fixed top-[0px] left-[0px] w-[50px] lg:hidden p-4 cursor-pointer' onClick={() => setOpen(true)}>
+        {!open && <div className='fixed top-[0px] left-[0px] w-[80px] lg:hidden p-7 cursor-pointer' onClick={() => setOpen(true)}>
           <MenuSvg />
         </div>}
         {open && (
@@ -88,7 +91,7 @@ export default function Sidebar({ className }: { className?: string }) {
             <>
               <div className="mt-5 2xl:mt-8" onClick={() => setOpen(!open)}>
                 {menuItems.map((item, index) => (
-                  <MenuItem key={index} href="" icon={item.icon} />
+                  <MenuItem key={index} href={item.href} icon={item.icon} />
                 ))}
               </div>
               <div
@@ -108,7 +111,8 @@ export default function Sidebar({ className }: { className?: string }) {
                     href={item.href}
                     icon={item.icon}
                     dropdownItems={[]}
-                    active={index === 0}
+                    active={index === 1}
+                    closeSideBar={closeSideBar}
                   />
                 ))}
               </div>

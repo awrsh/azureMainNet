@@ -76,7 +76,7 @@ const HeaderWrapper = styled.div`
   justify-content: space-between;
   grid-column: 2/-1;
   grid-row: 1/2;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1023px) {
     grid-column: 1/-1;
   }
 `
@@ -99,9 +99,9 @@ const BodyWrapper = styled.div`
   overflow-y: auto;
   overflow-x: hidden;
   z-index: 10;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1023px) {
     grid-column: 1/-1;
-    padding: 16px;
+    
   }
 
   /* ${({ theme }) => theme.mediaWidth.upToExtraSmall`

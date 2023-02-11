@@ -8,6 +8,8 @@ import { ExchangeIcon } from 'src/components/Icon/exchange';
 import { VoteIcon } from 'src/components/Icon/vote-icon';
 import { CompassIcon } from 'src/components/Icon/compass';
 import { HistoryIcon } from 'src/components/Icon/history';
+import { Liquid } from 'src/components/Icon/liquid';
+import { Telegram } from 'src/components/Icon/telegram';
 
 
 
@@ -15,27 +17,27 @@ export const menuItems = [
   {
     name: 'Home',
     icon: <HomeIcon />,
-    href: "#",
+    href: "https://azurswap.org",
   },
   {
     name: 'Swap',
     icon: <ExchangeIcon />,
-    href: "#",
+    href: "/#/swap",
   },
   {
     name: 'Liquidity ',
-    icon: <BookIcon />,
+    icon: <Liquid />,
     href: "#",
   },
  
   {
     name: 'Lock Token',
-    icon: <DiskIcon />,
+    icon: <Unlocked />,
     href: "#",
   },
   {
-    name: 'Private Sall',
-    icon: <Unlocked />,
+    name: 'Private Sell',
+    icon: <DiskIcon />,
     href: "#",
   },
   {
@@ -46,8 +48,9 @@ export const menuItems = [
 
   {
     name: 'Telegram Bot',
-    icon: <HistoryIcon />,
-    href: "#",
+    // icon: <HistoryIcon />,
+    icon: <Telegram />,
+    href: "https://t.me/AzurSwap_bot",
   },
 
   {
@@ -59,6 +62,11 @@ export const menuItems = [
   {
     name: 'Your Adv',
     icon: <PlusCircle />,
+    href: "#",
+  },
+  {
+    name: 'Document',
+    icon: <BookIcon />,
     href: "#",
   },
 ];

@@ -17,6 +17,7 @@ const TradingViewChart = React.memo(({
           locale="en"
           autosize
           interval={interval}
+          copyrightStyles={{span: {color: "transparent", pointerEvents: "none"}}}
         />
 })
 export default TradingViewChart

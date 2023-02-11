@@ -14,9 +14,18 @@ interface TopPoolsProps {
 }
 
 const FavoriteWrapper = styled.div`
-  max-width: 450px;
-  @media (min-width: 993px) and (max-width: 1440px){
+  @media (min-width: 768px){
     max-width: 450px;
+  }
+  @media (max-width: 768px){
+    img{
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 993px) and (max-width: 1440px){
+    max-width: 320px;
+    min-width: 295px;
     order: 2;
   }
 `
@@ -28,9 +37,9 @@ export default function Favorites({ limit }: TopPoolsProps) {
         'rounded-lg bg-white shadow-card dark:bg-light-dark flex-auto mt-4 lg:mt-0',
       )}
     >
-      <div className="p-6">
+      <div className="p-3">
         <h3 className="mb-6 text-base font-medium uppercase">FAVORITES </h3>
-        <div className="rounded-lg bg-white  shadow-card dark:bg-light-dark sm:p-8">
+        <div className="rounded-lg bg-white  shadow-card dark:bg-light-dark sm:p-3">
           <span className="col-span-2">
             Your favorite list is empty! Start building your favorite list by
             adding this pair.

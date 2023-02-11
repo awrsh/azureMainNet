@@ -96,11 +96,11 @@ const StyledBalanceMax = styled.button`
   border: 1px solid ${({ theme }) => theme.primary5};
   border-radius: 0.5rem;
   font-size: 0.875rem;
-
+  padding-inline: 4px;
   font-weight: 500;
   cursor: pointer;
-  margin-right: 0.5rem;
-  color: ${({ theme }) => theme.primaryText1};
+  margin-left: 12px;
+    color: ${({ theme }) => theme.primaryText1};
   :hover {
     border: 1px solid ${({ theme }) => theme.primary1};
   }
@@ -109,9 +109,7 @@ const StyledBalanceMax = styled.button`
     outline: none;
   }
 
-  ${({ theme }) => theme.mediaWidth.upToExtraSmall`
-    margin-right: 0.5rem;
-  `};
+  
 `
 
 interface CurrencyInputPanelProps {
@@ -221,7 +219,7 @@ export default function CurrencyInputPanel({
               <NumericalInput
                 className="token-amount-input"
                 value={value}
-                style={{background: "none", textAlign: 'end'}}
+                style={{background: "none", textAlign: 'end', fontSize: "14px"}}
                 onUserInput={val => {
                   onUserInput(val)
                 }}

@@ -10,10 +10,14 @@ import AD from '../../assets/images/ad/latest-release.png';
 interface Props {
   chartWrapperClass?: string;
 }
-
+const style:React.CSSProperties= {
+  height: "160px",
+  margin : "15px 0 0 0",
+  objectFit: "cover"
+}
 export default function OverviewChart({ chartWrapperClass }: Props) {
   const { layout } = useLayout();
-
+  
   return (
     <div>
 
@@ -24,6 +28,7 @@ export default function OverviewChart({ chartWrapperClass }: Props) {
             src={AD}
             placeholder="blur"
             alt="Pulses of Imagination #214"
+            style={style}
           />
         </div>
 
@@ -33,6 +38,7 @@ export default function OverviewChart({ chartWrapperClass }: Props) {
             src={AD}
             placeholder="blur"
             alt="Pulses of Imagination #214"
+            style={style}
           />
         </div>
 
